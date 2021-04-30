@@ -1,5 +1,9 @@
 name: "Build StreamDeck App"
 description: "Compile your StreamDeck to publish it!"
+author: "@SantiMA10"
+branding:
+  icon: check
+  color: purple
 inputs:
   input-directory:
     description: "Where is your code"

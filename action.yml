@@ -1,11 +1,11 @@
 name: "Build StreamDeck App"
-description: "Greet someone"
+description: "Compile your StreamDeck to publish it!"
 inputs:
   input-directory:
     description: "Where is your code"
     required: true
   output-directory:
-    description: "Where you want the .streamDeckPlugin to be stored"
+    description: "Where you want the .streamDeckPlugin"
     required: true
 runs:
   using: "composite"

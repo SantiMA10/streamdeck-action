@@ -24,3 +24,4 @@ jobs:
 
 ## Used by
 - [`SantiMA10/devops-streamdeck`](https://github.com/SantiMA10/devops-streamdeck)
+- [`eXpl0it3r/streamdeck-clockify`](https://github.com/eXpl0it3r/streamdeck-clockify)

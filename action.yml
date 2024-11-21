@@ -12,8 +12,8 @@ inputs:
     description: "Where you want the .streamDeckPlugin"
     required: true
 runs:
-  using: "composite"
-  steps:
-    - name: Generate .streamDeckPlugin
-      run: ${{ github.action_path }}/tools/mac/DistributionTool -b -i ${{ github.workspace }}${{ inputs.input-directory }} -o ${{ github.workspace }}${{ inputs.output-directory }}
-      shell: bash
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ github.workspace }}${{ inputs.input-directory }}
+    - ${{ github.workspace }}${{ inputs.output-directory }}

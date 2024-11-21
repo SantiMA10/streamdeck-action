@@ -6,11 +6,11 @@ Here is an example of how to configure it
 ```yaml
 jobs:
   build:
-    runs-on: [macos-latest] # 👀 This action only works on macOS
+    runs-on: linux
     steps:
       - uses: actions/checkout@v2
       # Do you stuff to build the project
-      - uses: SantiMA10/streamdeck-action@v0.0.1
+      - uses: SantiMA10/streamdeck-action@v0.1.0
         with:
           input-directory: "/dist/dev.santiagomartin.devops.sdPlugin" # Where is your code
           output-directory: "/release" # Where you want the .streamDeckPlugin

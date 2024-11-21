@@ -16,7 +16,7 @@ jobs:
           output-directory: "/release" # Where you want the .streamDeckPlugin
       # Create an artifact to download it
       - name: Upload .streamDeckPlugin artifact
-        uses: actions/upload-artifact@v1.0.0
+        uses: actions/upload-artifact@v4
         with:
           name: dev.santiagomartin.devops.streamDeckPlugin
           path: ./release/

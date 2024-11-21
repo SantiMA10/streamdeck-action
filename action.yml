@@ -15,5 +15,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ github.workspace }}${{ inputs.input-directory }}
-    - ${{ github.workspace }}${{ inputs.output-directory }}
+    - ${{ inputs.input-directory }}
+    - ${{ inputs.output-directory }}
